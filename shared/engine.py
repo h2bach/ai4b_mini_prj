@@ -21,7 +21,7 @@ def make_loader(data, split, config, vocab=None, encode=None, shuffle=False, gen
         encoded = [encode(t, vocab, config['max_length']) for t in part['x']]
         xs = (torch.tensor([a[0] for a in encoded], dtype=torch.long),
               torch.tensor([a[1] for a in encoded], dtype=torch.long))
-    ds = TensorDataset(*xs, torch.as_tensor(part['y'], dtype=torch.long))
+    ds = TensorDataset(*xs, torch.tensor(part['y'], dtype=torch.long))
     return DataLoader(ds, batch_size=config['batch_size'], shuffle=shuffle,
                       generator=generator, num_workers=0)
 
