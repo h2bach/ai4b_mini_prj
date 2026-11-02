@@ -24,7 +24,7 @@ Bài nhỏ: confusion matrix ba lớp, hàng thật/cột đoán: `[[45,0,5],[4,
 
 CNN chỉ đổi head; NLP chỉ đổi trọng số loss. Cùng seed giúp so sánh công bằng hơn nhưng không loại hết nhiễu. Khởi tạo lại model, optimizer và generator của DataLoader cho mỗi cấu hình. Không lấy model đã train làm điểm xuất phát của cấu hình còn lại.
 
-Học viên bắt buộc seed 0. Giảng viên chạy 0,1,2 và chọn theo mean macro-F1 validation, báo population standard deviation (`ddof=0`). Ba seed giúp nhìn dao động, chưa đủ chứng minh khác biệt thống kê tổng quát. Không chọn seed cao nhất làm đại diện.
+Bài nộp bắt buộc seed 0 cho cả hai cấu hình. Nếu mở rộng chạy thêm nhiều seed, dùng cùng tập seed cho mỗi cấu hình và báo mean macro-F1 validation cùng population standard deviation (`ddof=0`). Nhiều seed giúp nhìn dao động; vài seed vẫn chưa đủ chứng minh khác biệt thống kê tổng quát. Không chọn seed cao nhất làm đại diện.
 
 Thiết bị, phiên bản thư viện và phép toán có thể làm số khác nhau. Ghi môi trường, không cam kết giống từng bit giữa GPU khác nhau.
 

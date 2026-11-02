@@ -1,4 +1,5 @@
-# Cài torch phù hợp GPU trước; không tự nâng cấp môi trường cloud.
+# Thư viện để chạy baseline, notebook và phần TODO của bài tập.
+# Trên cloud đã có PyTorch, chỉ cài package còn thiếu theo CLOUD.md.
 torch>=2.2,<3
 numpy>=1.26,<3
 scikit-learn>=1.4,<2
@@ -6,8 +7,6 @@ pandas>=2.1,<4
 pyarrow>=14,<27
 matplotlib>=3.8,<4
 requests>=2.31,<3
-nbformat>=5.9,<6
-nbclient>=0.9,<1
 ipykernel>=6,<8
 joblib>=1.3,<2
 threadpoolctl>=3.2,<4
