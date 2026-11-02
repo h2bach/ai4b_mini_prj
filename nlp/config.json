@@ -1,0 +1,1 @@
+{"project":"nlp","variants":["plain","weighted"],"epochs":12,"batch_size":128,"lr":0.001,"clip":1.0,"max_length":40,"min_freq":2,"embedding_dim":64,"hidden_dim":64,"train_seeds":[0,1,2]}

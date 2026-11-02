@@ -1,0 +1,1 @@
+{"project":"cnn","variants":["flatten","gap"],"epochs":10,"batch_size":128,"lr":0.001,"clip":null,"split_seed":42,"train_seeds":[0,1,2]}
